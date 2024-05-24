@@ -19,6 +19,7 @@ function create_grid(num_square) {
     addSquareEventListeners(); // Add event listeners to new squares
 }
 
+// Default grid when the game first opens up
 create_grid(num_square);
 
 const sizeButton = document.querySelector("#size");
@@ -27,6 +28,7 @@ sizeButton.addEventListener("click", () => {
     let new_num_square = parseInt(prompt("Please enter the desired dimension of the square grid", "30"));
     if (!isNaN(new_num_square) && new_num_square > 0) {
         num_square = new_num_square;
+        // No need to wipe off the old grid as the start of the function already does that
         create_grid(num_square);
     }
 });
