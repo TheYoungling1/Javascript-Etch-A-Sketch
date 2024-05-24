@@ -1,0 +1,38 @@
+body {
+    background: #955cdb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.main_container {
+    display: flex;
+}
+
+/* makes the square divs of each row be in a horizontal direction, as they are added vertically down by a appendChild*/
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.setting {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 60px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 16px;
+    border: 1px solid grey;
+}
